@@ -1,0 +1,53 @@
+name: Profile
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    name: update
+
+    steps:
+      - uses: actions/checkout@v7
+
+      # 只產語言卡。跨全歷史彙總的卡片（總 commit、貢獻日曆）在這個帳號上
+      # 會被 GitHub 的 GraphQL 資源上限隨機拒絕，任何工具都一樣。
+      - name: Generate language card
+        uses: stats-organization/github-readme-stats-action@v2.0.1
+        with:
+          card: top-langs
+          token: ${{ secrets.PERSONAL_TOKEN }}
+          options: username=elct9620&langs_count=8&layout=donut-vertical
+          path: cards/top-langs.svg
+
+      - name: Commit language card
+        run: |
+          git config user.name "profile-bot"
+          git config user.email "profile-bot@users.noreply.github.com"
+          git add cards
+          if git diff --cached --quiet; then
+            echo "卡片無變化"
+          else
+            git commit -m "Update language card"
+            git push
+          fi
+
+      # 以英文 feed 為來源，中文連結由網址推導；中英兩版並非總是成對，
+      # 從英文側出發可確保清單與全英文的 README 一致，且不會產生死連結。
+      - name: Update writing list
+        uses: gautamkrishnar/blog-post-workflow@1.9.6
+        with:
+          feed_list: "https://blog.aotoki.me/en/index.xml"
+          max_post_count: 5
+          template: "- $title · $date$newline"
+          date_format: "yyyy-mm-dd"
+          item_exec: 'post.title = "[" + post.title + "](" + post.link + ") · [中文](" + post.link.replace("/en/", "/") + ")"'
+          commit_message: "Update writing list"
+          committer_username: "profile-bot"
+          committer_email: "profile-bot@users.noreply.github.com"
