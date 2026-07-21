@@ -18,23 +18,36 @@ jobs:
 
       # 只產語言卡。跨全歷史彙總的卡片（總 commit、貢獻日曆）在這個帳號上
       # 會被 GitHub 的 GraphQL 資源上限隨機拒絕，任何工具都一樣。
-      - name: Generate language card
-        uses: stats-organization/github-readme-stats-action@v2.0.1
+      #
+      # 這個工具依 repo 數與 commit 數計算語言，而非程式碼位元組數；位元組數
+      # 會讓早年的大型專案主導畫面，蓋掉近年實際在用的語言。
+      - name: Generate language cards
+        continue-on-error: true
+        uses: vn7n24fzkq/github-profile-summary-cards@v0.11.6
+        env:
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
         with:
-          card: top-langs
-          token: ${{ secrets.PERSONAL_TOKEN }}
-          options: username=elct9620&langs_count=8&layout=donut-vertical
-          path: cards/top-langs.svg
+          USERNAME: ${{ github.repository_owner }}
+          THEME: github
+          UTC_OFFSET: 8
+          AUTO_PUSH: false
 
-      - name: Commit language card
+      # 只搬走成功產出的檔案。產不出來時 cards/ 維持原狀、沒有差異、不會提交，
+      # 於是 README 保留前一天的卡片，而不是被清空。
+      - name: Publish language cards
         run: |
+          src=profile-summary-card-output/github
+          for f in 1-repos-per-language 2-most-commit-language; do
+            [ -s "$src/$f.svg" ] && cp "$src/$f.svg" "cards/$f.svg"
+          done
+          rm -rf profile-summary-card-output
           git config user.name "profile-bot"
           git config user.email "profile-bot@users.noreply.github.com"
           git add cards
           if git diff --cached --quiet; then
             echo "卡片無變化"
           else
-            git commit -m "Update language card"
+            git commit -m "Update language cards"
             git push
           fi
 

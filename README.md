@@ -26,4 +26,5 @@ Please contact me with `consultant[at]aotoki.me` for more details.
 
 ## Activity
 
-![Top languages](./cards/top-langs.svg)
+![Top languages by repo](./cards/1-repos-per-language.svg)
+![Top languages by commit](./cards/2-most-commit-language.svg)
