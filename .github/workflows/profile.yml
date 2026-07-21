@@ -37,8 +37,15 @@ jobs:
       - name: Publish language cards
         run: |
           src=profile-summary-card-output/github
+          mkdir -p cards
+          ls -la "$src" || echo "產生器沒有輸出"
           for f in 1-repos-per-language 2-most-commit-language; do
-            [ -s "$src/$f.svg" ] && cp "$src/$f.svg" "cards/$f.svg"
+            if [ -s "$src/$f.svg" ]; then
+              cp "$src/$f.svg" "cards/$f.svg"
+              echo "已更新 $f"
+            else
+              echo "略過 $f（本次未產出）"
+            fi
           done
           rm -rf profile-summary-card-output
           git config user.name "profile-bot"
