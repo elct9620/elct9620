@@ -47,7 +47,7 @@ jobs:
           max_post_count: 5
           template: "- $title · $date$newline"
           date_format: "yyyy-mm-dd"
-          item_exec: 'post.title = "[" + post.title + "](" + post.link + ") · [中文](" + post.link.replace("/en/", "/") + ")"'
+          item_exec: 'post.title = "[" + post.title + "](" + post.url + ") · [中文](" + post.url.replace("/en/", "/") + ")"'
           commit_message: "Update writing list"
           committer_username: "profile-bot"
           committer_email: "profile-bot@users.noreply.github.com"
