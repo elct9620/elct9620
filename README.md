@@ -18,11 +18,11 @@ Please contact me with `consultant[at]aotoki.me` for more details.
 ## Writing
 
 <!-- BLOG-POST-LIST:START -->
-- [Kobako: Cold Start Can Be 100× Faster?](https://blog.aotoki.me/en/posts/2026/06/17/kobako-cold-start-100x-faster/) · [中文](https://blog.aotoki.me/posts/2026/06/17/kobako-cold-start-100x-faster/) · 2026-06-16
-- [Kobako: How Much Protection Can Tests Provide with a Coding Agent?](https://blog.aotoki.me/en/posts/2026/06/03/tests-as-safety-net-with-coding-agent/) · [中文](https://blog.aotoki.me/posts/2026/06/03/tests-as-safety-net-with-coding-agent/) · 2026-06-02
-- [Building Kobako with AI: Will It Eventually Crash?](https://blog.aotoki.me/en/posts/2026/05/27/ai-development-hits-old-challenges/) · [中文](https://blog.aotoki.me/posts/2026/05/27/ai-development-hits-old-challenges/) · 2026-05-26
-- [Kobako: Letting Agents Safely Operate Rails](https://blog.aotoki.me/en/posts/2026/05/20/kobako-ruby-sandbox-for-ai/) · [中文](https://blog.aotoki.me/posts/2026/05/20/kobako-ruby-sandbox-for-ai/) · 2026-05-19
-- [When Claude Code Runs for Hours](https://blog.aotoki.me/en/posts/2026/04/15/when-claude-code-runs-for-hours/) · [中文](https://blog.aotoki.me/posts/2026/04/15/when-claude-code-runs-for-hours/) · 2026-04-14<!-- BLOG-POST-LIST:END -->
+- [Kobako: Cold Start Can Be 100× Faster?](https://blog.aotoki.me/en/posts/2026/06/17/kobako-cold-start-100x-faster/) · [中文](https://blog.aotoki.me/posts/2026/06/17/kobako-cold-start-100x-faster/) · 2026-06-17
+- [Kobako: How Much Protection Can Tests Provide with a Coding Agent?](https://blog.aotoki.me/en/posts/2026/06/03/tests-as-safety-net-with-coding-agent/) · [中文](https://blog.aotoki.me/posts/2026/06/03/tests-as-safety-net-with-coding-agent/) · 2026-06-03
+- [Building Kobako with AI: Will It Eventually Crash?](https://blog.aotoki.me/en/posts/2026/05/27/ai-development-hits-old-challenges/) · [中文](https://blog.aotoki.me/posts/2026/05/27/ai-development-hits-old-challenges/) · 2026-05-27
+- [Kobako: Letting Agents Safely Operate Rails](https://blog.aotoki.me/en/posts/2026/05/20/kobako-ruby-sandbox-for-ai/) · [中文](https://blog.aotoki.me/posts/2026/05/20/kobako-ruby-sandbox-for-ai/) · 2026-05-20
+- [When Claude Code Runs for Hours](https://blog.aotoki.me/en/posts/2026/04/15/when-claude-code-runs-for-hours/) · [中文](https://blog.aotoki.me/posts/2026/04/15/when-claude-code-runs-for-hours/) · 2026-04-15<!-- BLOG-POST-LIST:END -->
 
 ## Activity
 
