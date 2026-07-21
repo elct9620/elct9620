@@ -45,9 +45,10 @@ jobs:
         with:
           feed_list: "https://blog.aotoki.me/en/index.xml"
           max_post_count: 5
-          template: "- $title · $date$newline"
-          date_format: "yyyy-mm-dd"
+          template: "$newline- $title · $date"
+          date_format: "UTC:yyyy-mm-dd" # 少了 UTC: 會依 runner 時區換算，日期會早一天
           item_exec: 'post.title = "[" + post.title + "](" + post.url + ") · [中文](" + post.url.replace("/en/", "/") + ")"'
+          disable_html_encoding: true # 否則連結的括號會被編碼成 &lpar;，markdown 失效
           commit_message: "Update writing list"
           committer_username: "profile-bot"
           committer_email: "profile-bot@users.noreply.github.com"
