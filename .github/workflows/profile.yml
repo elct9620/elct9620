@@ -42,11 +42,14 @@ jobs:
       # 從英文側出發可確保清單與全英文的 README 一致，且不會產生死連結。
       - name: Update writing list
         uses: gautamkrishnar/blog-post-workflow@1.9.6
+        env:
+          # 文章的 pubDate 是台北午夜；用 runner 預設的 UTC 換算會早一天。
+          TZ: Asia/Taipei
         with:
           feed_list: "https://blog.aotoki.me/en/index.xml"
           max_post_count: 5
           template: "$newline- $title · $date"
-          date_format: "UTC:yyyy-mm-dd" # 少了 UTC: 會依 runner 時區換算，日期會早一天
+          date_format: "yyyy-mm-dd"
           item_exec: 'post.title = "[" + post.title + "](" + post.url + ") · [中文](" + post.url.replace("/en/", "/") + ")"'
           disable_html_encoding: true # 否則連結的括號會被編碼成 &lpar;，markdown 失效
           commit_message: "Update writing list"
