@@ -16,11 +16,13 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
-      # 只產語言卡。跨全歷史彙總的卡片（總 commit、貢獻日曆）在這個帳號上
-      # 會被 GitHub 的 GraphQL 資源上限隨機拒絕，任何工具都一樣。
+      # Language cards only. Cards that total commits, pull requests or stars
+      # across the account's history are rejected non-deterministically here,
+      # whichever tool generates them.
       #
-      # 這個工具依 repo 數與 commit 數計算語言，而非程式碼位元組數；位元組數
-      # 會讓早年的大型專案主導畫面，蓋掉近年實際在用的語言。
+      # This generator counts repositories and commits rather than bytes of
+      # code; byte-weighted stats let early large projects drown out the
+      # languages actually in use now.
       - name: Generate language cards
         continue-on-error: true
         uses: vn7n24fzkq/github-profile-summary-cards@v0.11.6
@@ -32,38 +34,30 @@ jobs:
           UTC_OFFSET: 8
           AUTO_PUSH: false
 
-      # 只搬走成功產出的檔案。產不出來時 cards/ 維持原狀、沒有差異、不會提交，
-      # 於是 README 保留前一天的卡片，而不是被清空。
       - name: Publish language cards
+        run: ./scripts/publish-cards.sh
+
+      - name: Commit language cards
         run: |
-          src=profile-summary-card-output/github
-          mkdir -p cards
-          ls -la "$src" || echo "產生器沒有輸出"
-          for f in 1-repos-per-language 2-most-commit-language; do
-            if [ -s "$src/$f.svg" ]; then
-              cp "$src/$f.svg" "cards/$f.svg"
-              echo "已更新 $f"
-            else
-              echo "略過 $f（本次未產出）"
-            fi
-          done
-          rm -rf profile-summary-card-output
           git config user.name "profile-bot"
           git config user.email "profile-bot@users.noreply.github.com"
           git add cards
           if git diff --cached --quiet; then
-            echo "卡片無變化"
+            echo "cards unchanged"
           else
             git commit -m "Update language cards"
             git push
           fi
 
-      # 以英文 feed 為來源，中文連結由網址推導；中英兩版並非總是成對，
-      # 從英文側出發可確保清單與全英文的 README 一致，且不會產生死連結。
+      # Sourced from the English feed, with the Chinese original linked
+      # alongside. The two languages are not always published in pairs; starting
+      # from the English side keeps the list consistent with an English README
+      # and never produces a dead link.
       - name: Update writing list
         uses: gautamkrishnar/blog-post-workflow@1.9.6
         env:
-          # 文章的 pubDate 是台北午夜；用 runner 預設的 UTC 換算會早一天。
+          # Posts carry a Taipei-midnight pubDate; the runner's UTC default
+          # would date every one of them a day early.
           TZ: Asia/Taipei
         with:
           feed_list: "https://blog.aotoki.me/en/index.xml"
@@ -71,7 +65,7 @@ jobs:
           template: "$newline- $title · $date"
           date_format: "yyyy-mm-dd"
           item_exec: 'post.title = "[" + post.title + "](" + post.url + ") · [中文](" + post.url.replace("/en/", "/") + ")"'
-          disable_html_encoding: true # 否則連結的括號會被編碼成 &lpar;，markdown 失效
+          disable_html_encoding: true # keeps the parentheses in markdown links from becoming &lpar;
           commit_message: "Update writing list"
           committer_username: "profile-bot"
           committer_email: "profile-bot@users.noreply.github.com"
