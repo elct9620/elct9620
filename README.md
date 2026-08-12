@@ -18,11 +18,11 @@ Please contact me with `consultant[at]aotoki.me` for more details.
 ## Writing
 
 <!-- BLOG-POST-LIST:START -->
+- [Kobako: Why Ruby, After My COSCUP 2026 Talk](https://blog.aotoki.me/en/posts/2026/08/12/kobako-why-ruby-after-coscup-2026/) · [中文](https://blog.aotoki.me/posts/2026/08/12/kobako-why-ruby-after-coscup-2026/) · 2026-08-12
 - [Kobako: From Ruby to mruby](https://blog.aotoki.me/en/posts/2026/08/05/kobako-from-ruby-to-mruby/) · [中文](https://blog.aotoki.me/posts/2026/08/05/kobako-from-ruby-to-mruby/) · 2026-08-05
 - [Kobako: Building a Sandbox for the AI Era](https://blog.aotoki.me/en/posts/2026/07/29/kobako-building-ai-era-sandbox/) · [中文](https://blog.aotoki.me/posts/2026/07/29/kobako-building-ai-era-sandbox/) · 2026-07-29
 - [Kobako: Cold Start Can Be 100× Faster?](https://blog.aotoki.me/en/posts/2026/06/17/kobako-cold-start-100x-faster/) · [中文](https://blog.aotoki.me/posts/2026/06/17/kobako-cold-start-100x-faster/) · 2026-06-17
-- [Kobako: How Much Protection Can Tests Provide with a Coding Agent?](https://blog.aotoki.me/en/posts/2026/06/03/tests-as-safety-net-with-coding-agent/) · [中文](https://blog.aotoki.me/posts/2026/06/03/tests-as-safety-net-with-coding-agent/) · 2026-06-03
-- [Building Kobako with AI: Will It Eventually Crash?](https://blog.aotoki.me/en/posts/2026/05/27/ai-development-hits-old-challenges/) · [中文](https://blog.aotoki.me/posts/2026/05/27/ai-development-hits-old-challenges/) · 2026-05-27<!-- BLOG-POST-LIST:END -->
+- [Kobako: How Much Protection Can Tests Provide with a Coding Agent?](https://blog.aotoki.me/en/posts/2026/06/03/tests-as-safety-net-with-coding-agent/) · [中文](https://blog.aotoki.me/posts/2026/06/03/tests-as-safety-net-with-coding-agent/) · 2026-06-03<!-- BLOG-POST-LIST:END -->
 
 ## Activity
 
