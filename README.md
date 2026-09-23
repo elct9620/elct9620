@@ -18,11 +18,11 @@ Please contact me with `consultant[at]aotoki.me` for more details.
 ## Writing
 
 <!-- BLOG-POST-LIST:START -->
+- [Kobako: Script Execution](https://blog.aotoki.me/en/posts/2026/09/23/kobako-script-execution/) · [中文](https://blog.aotoki.me/posts/2026/09/23/kobako-script-execution/) · 2026-09-23
 - [Kobako: Standard Output](https://blog.aotoki.me/en/posts/2026/09/16/kobako-standard-output/) · [中文](https://blog.aotoki.me/posts/2026/09/16/kobako-standard-output/) · 2026-09-16
 - [Kobako: Resource Limits](https://blog.aotoki.me/en/posts/2026/09/09/kobako-resource-limits/) · [中文](https://blog.aotoki.me/posts/2026/09/09/kobako-resource-limits/) · 2026-09-09
 - [Sumitsubo: Checking Implementations with Docs](https://blog.aotoki.me/en/posts/2026/09/02/sumitsubo-verify-with-document/) · [中文](https://blog.aotoki.me/posts/2026/09/02/sumitsubo-verify-with-document/) · 2026-09-02
-- [Sumitsubo: Turning Specs into a Linter](https://blog.aotoki.me/en/posts/2026/08/26/sumitsubo-spec-as-linter/) · [中文](https://blog.aotoki.me/posts/2026/08/26/sumitsubo-spec-as-linter/) · 2026-08-26
-- [Kobako: Exchanging Memory in WebAssembly](https://blog.aotoki.me/en/posts/2026/08/19/kobako-webassembly-memory-exchange/) · [中文](https://blog.aotoki.me/posts/2026/08/19/kobako-webassembly-memory-exchange/) · 2026-08-19<!-- BLOG-POST-LIST:END -->
+- [Sumitsubo: Turning Specs into a Linter](https://blog.aotoki.me/en/posts/2026/08/26/sumitsubo-spec-as-linter/) · [中文](https://blog.aotoki.me/posts/2026/08/26/sumitsubo-spec-as-linter/) · 2026-08-26<!-- BLOG-POST-LIST:END -->
 
 ## Activity
 
