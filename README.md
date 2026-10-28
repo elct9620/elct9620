@@ -18,11 +18,11 @@ Please contact me with `consultant[at]aotoki.me` for more details.
 ## Writing
 
 <!-- BLOG-POST-LIST:START -->
+- [How NVIDIA OpenShell Handles Network Access](https://blog.aotoki.me/en/posts/2026/10/28/nvidia-openshell-network-access/) · [中文](https://blog.aotoki.me/posts/2026/10/28/nvidia-openshell-network-access/) · 2026-10-28
 - [Kobako: Why Native Filesystem Support](https://blog.aotoki.me/en/posts/2026/10/21/kobako-native-filesystem-support/) · [中文](https://blog.aotoki.me/posts/2026/10/21/kobako-native-filesystem-support/) · 2026-10-21
 - [Kobako: Handle Mechanism](https://blog.aotoki.me/en/posts/2026/10/14/kobako-handle-mechanism/) · [中文](https://blog.aotoki.me/posts/2026/10/14/kobako-handle-mechanism/) · 2026-10-14
 - [What Disappeared After AI Started Writing Our Code?](https://blog.aotoki.me/en/posts/2026/10/07/what-disappeared-when-ai-writes-code/) · [中文](https://blog.aotoki.me/posts/2026/10/07/what-disappeared-when-ai-writes-code/) · 2026-10-07
-- [Tsuzuri: Building Another Subtitle Editor in the AI Era — Is It Reinventing the Wheel?](https://blog.aotoki.me/en/posts/2026/09/30/tsuzuri-reinventing-subtitle-editor/) · [中文](https://blog.aotoki.me/posts/2026/09/30/tsuzuri-reinventing-subtitle-editor/) · 2026-09-30
-- [Kobako: Script Execution](https://blog.aotoki.me/en/posts/2026/09/23/kobako-script-execution/) · [中文](https://blog.aotoki.me/posts/2026/09/23/kobako-script-execution/) · 2026-09-23<!-- BLOG-POST-LIST:END -->
+- [Tsuzuri: Building Another Subtitle Editor in the AI Era — Is It Reinventing the Wheel?](https://blog.aotoki.me/en/posts/2026/09/30/tsuzuri-reinventing-subtitle-editor/) · [中文](https://blog.aotoki.me/posts/2026/09/30/tsuzuri-reinventing-subtitle-editor/) · 2026-09-30<!-- BLOG-POST-LIST:END -->
 
 ## Activity
 
