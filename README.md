@@ -18,11 +18,11 @@ Please contact me with `consultant[at]aotoki.me` for more details.
 ## Writing
 
 <!-- BLOG-POST-LIST:START -->
+- [Kobako: Why the Sandbox Deliberately Has No Time](https://blog.aotoki.me/en/posts/2026/11/11/kobako-why-sandbox-has-no-time/) · [中文](https://blog.aotoki.me/posts/2026/11/11/kobako-why-sandbox-has-no-time/) · 2026-11-11
 - [Kobako: Letting Blocks Pass Through the Sandbox](https://blog.aotoki.me/en/posts/2026/11/04/kobako-block-through-sandbox/) · [中文](https://blog.aotoki.me/posts/2026/11/04/kobako-block-through-sandbox/) · 2026-11-04
 - [How NVIDIA OpenShell Handles Network Access](https://blog.aotoki.me/en/posts/2026/10/28/nvidia-openshell-network-access/) · [中文](https://blog.aotoki.me/posts/2026/10/28/nvidia-openshell-network-access/) · 2026-10-28
 - [Kobako: Why Native Filesystem Support](https://blog.aotoki.me/en/posts/2026/10/21/kobako-native-filesystem-support/) · [中文](https://blog.aotoki.me/posts/2026/10/21/kobako-native-filesystem-support/) · 2026-10-21
-- [Kobako: Handle Mechanism](https://blog.aotoki.me/en/posts/2026/10/14/kobako-handle-mechanism/) · [中文](https://blog.aotoki.me/posts/2026/10/14/kobako-handle-mechanism/) · 2026-10-14
-- [What Disappeared After AI Started Writing Our Code?](https://blog.aotoki.me/en/posts/2026/10/07/what-disappeared-when-ai-writes-code/) · [中文](https://blog.aotoki.me/posts/2026/10/07/what-disappeared-when-ai-writes-code/) · 2026-10-07<!-- BLOG-POST-LIST:END -->
+- [Kobako: Handle Mechanism](https://blog.aotoki.me/en/posts/2026/10/14/kobako-handle-mechanism/) · [中文](https://blog.aotoki.me/posts/2026/10/14/kobako-handle-mechanism/) · 2026-10-14<!-- BLOG-POST-LIST:END -->
 
 ## Activity
 
